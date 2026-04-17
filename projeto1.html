@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Projeto T-Rex</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #8b1d0e, #2b0a05);
+  color: white;
+}
+
+.container {
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Texto */
+.texto {
+  width: 40%;
+}
+
+.texto h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 60px;
+  letter-spacing: 3px;
+  color: #ffcc00;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+  margin-bottom: 20px;
+}
+
+.texto h3 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.texto p {
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: justify;
+  color: #f1f1f1;
+}
+
+/* IMAGENS */
+.imagens {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.imagens img {
+  width: 90%;
+  height: 220px;
+  object-fit: contain; /* NÃO CORTA MAIS */
+  background: black;   /* opcional: fundo pra não ficar vazio */
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.imagens img:hover {
+  transform: scale(1.05);
+}
+
+/* T-REX */
+.grande {
+  grid-column: span 2;
+  width: 95%;
+  height: 300px !important;
+  object-fit: contain; /* também sem corte */
+  display: block;
+  margin: 0 auto;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Texto -->
+  <div class="texto">
+    <h1>Projeto T-Rex</h1>
+
+    <h3>Como surgiu a ideia?</h3>
+    <p>
+A ideia surgiu do nosso querido professor Marcos Muller, que um dia estava vendo Jurassic Park, e achou interessante dar a ideia para seus alunos do 1º ano do EM de fazer um dinossauro em tamanho real.
+
+Os alunos da 21A e da 21B compraram a ideia e escolheram o T-Rex, iniciando assim o projeto.
+    </p>
+  </div>
+
+  <!-- Imagens -->
+  <div class="imagens">
+    <img src="logo.jpg" alt="Jurassic Park">
+    <img src="alan.jpeg" alt="Professor">
+
+    <!-- T-REX -->
+    <img src="trex.jpg" class="grande" id="trex" alt="T-Rex">
+  </div>
+
+
+
+<!-- SCRIPT -->
+<script>
+const trex = document.getElementById("trex");
+const som = document.getElementById("rugido");
+
+trex.addEventListener("mouseenter", () => {
+  som.currentTime = 0;
+  som.play();
+});
+</script>
+
+</body>
+</html>

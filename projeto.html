@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Projeto T-Rex</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #000;
+  color: white;
+}
+
+/* PÁGINAS */
+section {
+  padding: 40px;
+}
+
+/* Página 1 */
+.pagina1 {
+  background: linear-gradient(135deg, #8b1d0e, #2b0a05);
+}
+
+/* Página 2 */
+.pagina2 {
+  background: linear-gradient(135deg, #1a1a1a, #000000);
+  text-align: center;
+}
+
+/* CONTAINER ORIGINAL */
+.container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Texto */
+.texto {
+  width: 40%;
+}
+
+.texto h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 60px;
+  letter-spacing: 3px;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.texto p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* IMAGENS */
+.imagens {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.imagens img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: black;
+  border-radius: 12px;
+}
+
+/* T-REX */
+.grande {
+  grid-column: span 2;
+  height: 300px !important;
+}
+
+/* Página 2 estilo */
+.pagina2 h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 60px;
+  color: #ffcc00;
+}
+
+.pagina2 p {
+  font-size: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- PÁGINA 1 -->
+<section class="pagina1">
+  <div class="container">
+
+    <div class="texto">
+      <h1>Projeto T-Rex</h1>
+      <p>
+A ideia surgiu do nosso querido professor Marcos Muller, que um dia estava vendo jurassic park, e achou interessante dar a ideia para seus alunos do 1º ano do EM de fazer um dinossauro da nossa preferência em tamanho real. 
+Os alunos da 21A e da 21B compraram a ideia, e escolheram o T-rex para fazer em tamanho real, e então começaram com o projeto. 
+      </p>
+    </div>
+
+    <div class="imagens">
+      <img src="logo.jpg">
+      <img src="alan.jpeg">
+      <img src="trex.jpg" class="grande" id="trex">
+    </div>
+
+  </div>
+</section>
+
+<!-- PÁGINA 2 -->
+<section class="trex.html">
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Projeto T-Rex 3D</title>
+
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #7a1e10;
+      font-family: 'Roboto', sans-serif;
+      color: #ffd966;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px;
+    }
+
+    .texto {
+      width: 55%;
+    }
+
+    h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 34px;
+      color: #ffcc00;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .imagem {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .imagem img {
+      width: 100%;
+      max-width: 450px; /* imagem maior */
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    
+    <div class="texto">
+      <h1>Como vai funcionar o projeto?</h1>
+
+      <p>
+        Basicamente, o projeto está funcionando da seguinte forma:
+        O nosso professor Marcos Müller procurou na internet um T-Rex em 3D que funcionasse,
+        para nós deixarmos ele em tamanho real, e que conseguíssemos cortar nele no Bambu Studios.
+      </p>
+
+      <p>
+        Depois disso tudo, ele ensinou os alunos tanto da 21A quanto da 21B a cortar em pequenos
+        pedaços o nosso T-Rex.
+      </p>
+
+      <p>
+        Para dar certo nosso projeto, ele irá escolher algumas pessoas em específico para cortar
+        o nosso T-Rex certinho, para depois os estudantes colocarem na impressora 3D.
+      </p>
+    </div>
+
+    <div class="imagem">
+      <img src="impressora.jpeg" alt="impressora">
+    </div>
+
+  </div>
+
+</body>
+</html>
